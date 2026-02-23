@@ -1,0 +1,11 @@
+#mclaren_f1_logo{
+    width: 240;
+}
+
+#navbar{
+    background-color: rgb(255, 123, 0);
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+}

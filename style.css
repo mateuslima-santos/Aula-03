@@ -1,41 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
 body{
     margin: 0;
     padding: 0;
     background-color: bisque;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh
+}
+
+main {
+    flex: 1;
 }
 
 #mclaren_f1_logo{
-    width: 240;
+    width: 240px;
 }
 
 #navbar{
     background-color: rgb(255, 123, 0);
-    color: white;
+    color: black;
 
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 
     padding: 20px;
+    gap: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#secao_pilotos{
+    background-color: rgb(255, 123, 0);
+    color: black;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    padding: 20px;
+    gap: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#links{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 #noticias{
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px 10px;
+    text-align: center;
+    justify-content: space-around;
+    padding: 6px;
+}
+
+#pilotos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 10px;
     text-align: center;
     justify-content: space-around;
     padding: 6px;
 }
 
 .noticia{
-    background-color: lightslategray;
+    background-color: black;
     color: white;
     border: 4px solid black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 20px;
 }
 
 .img_noticia{
-    width: 300px;
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.img_piloto{
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.piloto{
+    background-color: rgb(255, 123, 0);
+    color: white;
+    border: 4px solid black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#lando_norris{
+    object-position: top;
+}
+
+#Norris{
+    object-position: top;
+}
+
+#Piastri{
+    object-position: top;
+}
+
+#copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+    padding: 20px;
+    text-align: center;
 }
